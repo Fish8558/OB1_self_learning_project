@@ -1,0 +1,86 @@
+[
+  {
+    "model": "users.user",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$720000$TIOKb4a3ApX5tMLdCpDvhH$WEX2BIfnHNBkrwwmAXin3x7m++UeYjGLY58flJAEWaA=",
+      "last_login": null,
+      "is_superuser": true,
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2024-08-19T01:08:11.171Z",
+      "email": "admin@example.com",
+      "user_name": "MrAdmin",
+      "first_name": "Admin",
+      "last_name": "Root",
+      "phone": null,
+      "city": null,
+      "role": "admin",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": 2,
+    "fields": {
+      "password": "pbkdf2_sha256$720000$Hl7IyYpejNlNMTkm3IQFo8$Je20JBnqkttwNGlAmQ6qtiyrO81l1/yuFHEkRoTc1RA=",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2024-08-19T01:10:52.487Z",
+      "email": "professor@test.com",
+      "user_name": "professor_arkady",
+      "first_name": "Аркадий",
+      "last_name": "Власов",
+      "phone": null,
+      "city": null,
+      "role": "professor",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": 3,
+    "fields": {
+      "password": "pbkdf2_sha256$720000$Wj1aZOSkl06LGdqHd34fSE$jjw2W0jM2RAtohydvg8CvcADl73jboLcYLEASqgqD3k=",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-08-19T01:12:22.815Z",
+      "email": "alex_ivanov@test.com",
+      "user_name": "student_alex",
+      "first_name": "Алексей",
+      "last_name": "Иванов",
+      "phone": null,
+      "city": null,
+      "role": "student",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.user",
+    "pk": 4,
+    "fields": {
+      "password": "pbkdf2_sha256$720000$xFGg4UwVQJGbdfpr2v5XTi$f9ub3PiB7xMsZZh4WitI28lwRTcMYoV3z6K5C7s+lr0=",
+      "last_login": null,
+      "is_superuser": false,
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2024-08-19T01:13:41.768Z",
+      "email": "max_katasonov@test.com",
+      "user_name": "student_max",
+      "first_name": "Максим",
+      "last_name": "Катасонов",
+      "phone": null,
+      "city": null,
+      "role": "student",
+      "groups": [],
+      "user_permissions": []
+    }
+  }
+]
