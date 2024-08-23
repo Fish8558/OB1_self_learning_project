@@ -8,6 +8,7 @@ from users.models import User
 
 class Command(BaseCommand):
     """Создание суперпользователя"""
+
     def handle(self, *args, **options):
         dotenv_path = os.path.join(BASE_DIR, '.env')
         if os.path.exists(dotenv_path):

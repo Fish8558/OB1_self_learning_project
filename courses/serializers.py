@@ -8,6 +8,13 @@ class CourseSerializer(serializers.ModelSerializer):
     class Meta:
         model = Course
         fields = '__all__'
+        read_only_fields = ['owner', 'created_at']
+
+    def create(self, validated_data):
+        """Автоматически устанавливаем текущего пользователя как владельца курса"""
+        user = self.context['request'].user
+        validated_data['owner'] = user
+        return super().create(validated_data)
 
 
 class ModuleSerializer(serializers.ModelSerializer):

@@ -1,0 +1,183 @@
+[
+  {
+    "model": "courses.course",
+    "pk": 1,
+    "fields": {
+      "title": "Профессия Python-разработчик",
+      "description": "На данном курсе вы изучите основы языка Python",
+      "preview": "courses/course/course_example.jpg",
+      "owner": 1,
+      "created_at": "2024-08-23T02:40:08.417Z"
+    }
+  },
+  {
+    "model": "courses.module",
+    "pk": 1,
+    "fields": {
+      "title": "Основы программирования",
+      "course": 1,
+      "preview": "courses/module/module_example.jpg",
+      "created_at": "2024-08-23T02:42:55.896Z"
+    }
+  },
+  {
+    "model": "courses.lesson",
+    "pk": 1,
+    "fields": {
+      "title": "Погружение: коллекции и вложенность",
+      "content": "Формат JSON — самый популярный текстовый формат во всем интернете. - Текстовый формат. - Структурированный. - Похож на словари в Python. - Можно хранить в файлах. Отличия от словарей в Python: # Ключом может быть только строка. # Всегда используются двойные кавычки. # true пишется с маленькой буквы. # После последнего элемента не ставится запятая. # Нельзя использовать кортежи и множества — только списки и словари. # Пустое значение не None, а null.",
+      "preview": "courses/lesson/lesson_example.jpg",
+      "url": null,
+      "module": 1,
+      "created_at": "2024-08-23T02:50:42.644Z"
+    }
+  },
+  {
+    "model": "courses.lessontest",
+    "pk": 1,
+    "fields": {
+      "title": "Проверка усвоения материала по словарям",
+      "lesson": 1
+    }
+  },
+  {
+    "model": "courses.lessontest",
+    "pk": 2,
+    "fields": {
+      "title": "Вопросы про JSON",
+      "lesson": 1
+    }
+  },
+  {
+    "model": "courses.question",
+    "pk": 1,
+    "fields": {
+      "text": "Проанализируйте предоставленную структуру данных (это отзывы к экскурсии) и ответьте на вопрос. Как получить доступ к оценке экскурсии, если i — это порядковый номер отзыва?",
+      "lesson_test": 1
+    }
+  },
+  {
+    "model": "courses.question",
+    "pk": 2,
+    "fields": {
+      "text": "Изначально JSON — это формат объектов языка",
+      "lesson_test": 2
+    }
+  },
+  {
+    "model": "courses.question",
+    "pk": 3,
+    "fields": {
+      "text": "Что может быть ключами в JSON?",
+      "lesson_test": 2
+    }
+  },
+  {
+    "model": "courses.answer",
+    "pk": 1,
+    "fields": {
+      "question": 1,
+      "text": "reviews['fields']['stars'][i]",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "courses.answer",
+    "pk": 2,
+    "fields": {
+      "question": 1,
+      "text": "reviews[i - 1]['fields']['stars']",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "courses.answer",
+    "pk": 3,
+    "fields": {
+      "question": 1,
+      "text": "reviews[i - 1]['pk']['stars'][i]",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "courses.answer",
+    "pk": 4,
+    "fields": {
+      "question": 1,
+      "text": "reviews[i]['fields']['stars'][i]",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "courses.answer",
+    "pk": 5,
+    "fields": {
+      "question": 2,
+      "text": "Java",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "courses.answer",
+    "pk": 6,
+    "fields": {
+      "question": 2,
+      "text": "Jenkins",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "courses.answer",
+    "pk": 7,
+    "fields": {
+      "question": 2,
+      "text": "JavaScript",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "courses.answer",
+    "pk": 8,
+    "fields": {
+      "question": 2,
+      "text": "JScript",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "courses.answer",
+    "pk": 9,
+    "fields": {
+      "question": 3,
+      "text": "Строки",
+      "is_correct": true
+    }
+  },
+  {
+    "model": "courses.answer",
+    "pk": 10,
+    "fields": {
+      "question": 3,
+      "text": "Целые числа",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "courses.answer",
+    "pk": 11,
+    "fields": {
+      "question": 3,
+      "text": "Дробные числа",
+      "is_correct": false
+    }
+  },
+  {
+    "model": "courses.answer",
+    "pk": 12,
+    "fields": {
+      "question": 3,
+      "text": "Булевы значения",
+      "is_correct": false
+    }
+  }
+]
